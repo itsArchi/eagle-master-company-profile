@@ -143,6 +143,7 @@ nav ul li a.active {
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     gap: 20px;
+    height: 80vh;
     /* border: 1px solid black; */
 }
 
@@ -198,7 +199,7 @@ nav ul li a.active {
     padding-bottom: 20px;
 }
 
-.fa-solid, .fa-brands {
+.fa-shield, .fa-chart-pie, .fa-code, .fa-android, .fa-magnifying-glass {
     width: 40px;
     height: 40px;
     color: #fbaf32;
@@ -213,6 +214,7 @@ nav ul li a.active {
     padding: 20px;
     margin-top: 50px;
     gap: 20px;
+    height: 80vh;
 }
 
 .testimonial-title {
@@ -281,4 +283,36 @@ nav ul li a.active {
     padding: 30px;
     text-align: center;
     box-sizing: border-box;
+}
+
+/* SECTION CONTACT */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    height: 50vh;
+}
+
+.contact-title h3 {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.contact-title span {
+    color: #fbaf32;
+    font-weight: 600;
+}
+
+.email, .wa, .location {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.fa-envelope, .fa-whatsapp, .fa-location-dot {
+    color: #fbaf32;
+    width: 30px;
+    height: 30px;
 }
