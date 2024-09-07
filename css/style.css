@@ -1,0 +1,205 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+h1, h3, h4 {
+    font-family: "Nunito", sans-serif; 
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+nav div a {
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fbaf32;
+    text-decoration: none;
+}
+
+span {
+    color: #696464;
+}
+
+span:hover {
+    color: #fbaf32;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px 0px;
+
+}
+
+nav ul li a {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #aca6a6;
+}
+
+nav ul li a:hover {
+    color: #fbaf32;
+}
+
+nav ul li a.active {
+    color: #fbaf32;
+}
+
+/* SECTION HOME */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    height: 85vh;
+    /* border: 1px solid black; */
+}
+
+.tagline-rank {
+    font-size: 60px;
+    font-weight: 200;
+    color: #fbaf32;
+    padding-bottom: 20px;
+}
+
+.tagline-rank span {
+    color: #fbaf32;
+    font-weight: 600;
+}
+
+.tagline-first {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: -15px;
+}
+
+.tagline-second {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fbaf32;
+}
+
+.container-image img{
+    width: 600px;
+}
+
+/* SECTION ABOUT */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.about-title {
+    width: 50%;
+}
+
+.about-title h3 {
+    font-size: 30px;
+}
+
+.about-title span {
+    color: #fbaf32;
+    font-weight: 600;
+}
+
+.about-title p {
+    padding: 20px 0px;
+}
+
+.about-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.about-image img {
+    width: 300px;
+}
+
+/* SECTION SERVICES */
+#service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+
+.service-title {
+    grid-column: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-title h3 {
+    font-size: 30px;
+    color: #fbaf32;
+}
+
+.cybersecurity {
+    grid-column: 1;
+}
+
+.dataanalyst {
+    grid-column: 2;
+}
+
+.webdev {
+    grid-column: 3;
+}
+
+.mobiledev {
+    grid-column: 1; 
+}
+
+.seo {
+    grid-column: 2; 
+}
+
+.cybersecurity, .dataanalyst, .webdev, .mobiledev, .seo {
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fbaf32;
+    border-radius: 10px;
+}
+
+.cybersecurity h3, .dataanalyst h3, .webdev h3, .mobiledev h3, .seo h3 {
+    color: #fbaf32;
+    padding-bottom: 20px;
+}
+
+.fa-solid, .fa-brands {
+    width: 40px;
+    height: 40px;
+    color: #fbaf32;
+    border-radius: 2px;
+    padding-top: 10px;
+}
+
+/* SECTION TESTIMONIAL */
