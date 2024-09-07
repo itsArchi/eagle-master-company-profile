@@ -154,7 +154,11 @@ nav ul li a.active {
 
 .service-title h3 {
     font-size: 30px;
+}
+
+.service-title span {
     color: #fbaf32;
+    font-weight: 600;
 }
 
 .cybersecurity {
@@ -185,7 +189,7 @@ nav ul li a.active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #fbaf32;
+    border: 2px solid #fbaf32;
     border-radius: 10px;
 }
 
@@ -203,3 +207,78 @@ nav ul li a.active {
 }
 
 /* SECTION TESTIMONIAL */
+#testimonial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.testimonial-title {
+    grid-column: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-title h3 {
+    font-size: 30px;
+}
+
+.testimonial-title span {
+    color: #fbaf32;
+    font-weight: 600;
+}
+
+.client-picture img {
+    width: 50px;
+}
+
+.client-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.client-quote span {
+    color: #fbaf32;
+}
+
+.client-name h4 {
+    padding-top: 10px;
+    color: #fbaf32;
+    font-size: 18px;
+}
+
+.client-one {
+    grid-column: 1;
+}
+
+/* .client-two {
+    grid-column: 2;
+} */
+
+/* .client-three {
+    grid-column: 3;
+} */
+
+/* .client-four {
+    grid-column: 1;
+} */
+
+/* .client-five {
+    grid-column: 2;
+} */
+
+/* .client-six {
+    grid-column: 3;
+} */
+
+.client-one, .client-two, .client-three, .client-four, .client-five, .client-six { 
+    border: 2px solid #fbaf32;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
