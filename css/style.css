@@ -18,7 +18,7 @@ p {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 20px 200px;
+    padding: 20px 20px;
     align-items: center;
     /* border: 1px solid black; */
 }
@@ -102,12 +102,29 @@ nav ul li a.active {
     width: 600px;
 }
 
+@media screen and (max-width: 768px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .container-image img {
+        padding-top: 50px;
+        width: 400px;
+    }
+}
+
 /* SECTION ABOUT */
 #about {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 30px;
+    height: 80vh;
+    /* border: 1px solid blue; */
 }
 
 .about-title {
@@ -137,11 +154,47 @@ nav ul li a.active {
     width: 300px;
 }
 
+@media screen and (max-width: 768px) {
+    #about {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-title {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .about-title h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .about-title p {
+        margin: 0 auto 20px;
+        max-width: 100%;
+        padding: 0;
+        text-align: justify;
+        /* border: 1px solid black; */
+    }
+    
+    .about-image {
+        flex-direction: column;
+    }
+    
+    .about-image img {
+        margin-bottom: 10px;
+        max-width: 90%;
+    }
+}
+
 /* SECTION SERVICES */
 #service{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+    padding: 20px 0px;
     gap: 20px;
     height: 80vh;
     /* border: 1px solid black; */
@@ -207,6 +260,45 @@ nav ul li a.active {
     padding-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    #service {
+        grid-template-columns: 1fr; 
+        padding: 20px 10px; 
+        gap: 20px; 
+        height: auto; 
+    }
+
+    .service-title {
+        grid-column: 1; 
+        text-align: center;
+    }
+
+    .cybersecurity, .dataanalyst, .webdev, .mobiledev, .seo {
+        grid-column: 1; 
+        padding: 20px; 
+        margin-bottom: 20px; 
+        border: 1px solid #fbaf32; 
+        border-radius: 10px;
+
+    .service-title h3 {
+        font-size: 24px;
+    }
+
+    .cybersecurity h3, .dataanalyst h3, .webdev h3, .mobiledev h3, .seo h3 {
+        font-size: 20px; 
+        padding-bottom: 15px;
+    }
+
+    .fa-shield, .fa-chart-pie, .fa-code, .fa-android, .fa-magnifying-glass {
+        width: 30px; 
+        height: 30px; 
+        font-size: 24px; 
+        padding-top: 5px; 
+    }
+}
+
+
+
 /* SECTION TESTIMONIAL */
 #testimonial {
     display: grid;
@@ -215,6 +307,7 @@ nav ul li a.active {
     margin-top: 50px;
     gap: 20px;
     height: 80vh;
+    /* border: 1px solid blue; */
 }
 
 .testimonial-title {
@@ -285,6 +378,42 @@ nav ul li a.active {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    #testimonial {
+        grid-template-columns: 1fr;
+        height: auto;
+        /* overflow-y: auto;  */
+    }
+
+    .testimonial-title {
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+
+    .client-one, .client-two, .client-three, .client-four, .client-five, .client-six {
+        grid-column: 1;
+        margin-bottom: 20px; 
+    }
+
+    .client-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-picture img {
+        width: 60px; 
+    }
+
+    .client-name h4 {
+        font-size: 16px; 
+    }
+
+    .client-quote {
+        font-size: 16px; 
+    }
+}
+
+
 /* SECTION CONTACT */
 #contact {
     display: flex;
@@ -293,6 +422,7 @@ nav ul li a.active {
     justify-content: center;
     padding: 20px 30px;
     height: 50vh;
+    /* border: 1px solid black; */
 }
 
 .contact-title h3 {
@@ -315,4 +445,14 @@ nav ul li a.active {
     color: #fbaf32;
     width: 30px;
     height: 30px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbaf32;
+    padding: 30px;
+    border-top: 2px solid #fbaf32;
 }
